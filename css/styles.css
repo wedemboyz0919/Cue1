@@ -13,6 +13,9 @@ h2 {
 header h2 {
     color: #439b4f;
 }
+h5:hover, a:hover{
+    color: rgb(224, 178, 51);
+}
 
 footer {
     background-image: linear-gradient(#CEC8FF, white);
