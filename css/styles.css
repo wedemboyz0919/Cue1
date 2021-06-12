@@ -17,7 +17,7 @@ h5:hover, a:hover{
     color: rgb(224, 178, 51);
 }
 
-footer {
+.site-footer {
     background-image: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
 }
