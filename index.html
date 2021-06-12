@@ -29,6 +29,9 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <div class="col-md-4 col-lg-2 mt-4">
+                    <a href="#reserveForm"class="btn btn-primary bg-info"  role="button">Reserve Campsite</a>
+                </div>
             </div>
         </div>    
     </header>
@@ -73,8 +76,14 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>  
+                    <img class="d-flex ml-3 img-thumbnail"  src="img\react-lake-thumb.jpg" alt="React Lake"/>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -92,6 +101,46 @@
                         <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header text-white bg-info">
+                        Reserve Campsite
+                    </h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="form-group row">
+                                <label for="numCampers" class="col-sm-6 col-form-label">Number Of Campers</label>
+                                <div class="col">
+                                    <select type="" name="numCampers" class="form-control" id="numCampers" placeholder="numCampers">
+                                        <option selected>Select..</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col">
+                                    <input type="date" id="date" name="date" class="form-control" placeholder="date"/>
+                                </div>  
+                            </div>
+                            <div class="row form-group">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary" >Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
