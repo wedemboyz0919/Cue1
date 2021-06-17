@@ -17,6 +17,11 @@ h5:hover, a:hover{
     color: rgb(224, 178, 51);
 }
 
+.tab-content {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 10px;
+}
 .site-footer {
     background-image: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
