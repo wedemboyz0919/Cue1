@@ -17,6 +17,21 @@ h5:hover, a:hover{
     color: rgb(224, 178, 51);
 }
 
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+    border: solid #5637DD;
+}
+
+#carouselButton{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
 .tab-content {
     border: 1px solid #ddd;
     border-top: none;
