@@ -30,7 +30,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-lg-2 mt-4">
-                    <a role="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
+                    <a role="button" class="btn btn-lg btn-info" id="reserveButton">Reserve Campsite</a> 
                 </div>
             </div>
         </div>    
@@ -39,7 +39,7 @@
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog" class="modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header" class="bg-info" class="text-white" > 
+                <div class="modal-header"> 
                     <h3 class="modal-title">Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -106,7 +106,7 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <a role="button" id="loginButton">
                         <i class="fa fa-signin"></i>login
                     </a>
                 </span>
@@ -153,13 +153,13 @@
 
         <div class="row row-content">
             <div class="col-md-8 mx-auto">
-                <div id="homeCarousel" class="carousel-slide" data-ride="carousel">
+                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#homeCarousel" data-slide-to="1"></li>
                         <li data-target="#homeCarousel" data-slide-to="2"></li>
                     </ol>
-                    <div class="carosel-inner">
+                    <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="img\breadcrumb-trail.jpg" alt="breadcrumb trail campground"/>
                             <div class="carousel-caption">
@@ -294,23 +294,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        $(function() {
-            $(".carousel").carousel( { interval: 2000 } );
-            $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause"); 
-                }
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
