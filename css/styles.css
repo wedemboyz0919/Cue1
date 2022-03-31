@@ -5,10 +5,16 @@ h1, h2, h3 {
   font-family: "Lobster", cursive; }
 
 h2 {
-  color: #3046C5; }
+  color: rgb(12, 12, 134)/*#3046C5*/; }
 
 header h2 {
-  color: #439b4f; }
+  color: blueviolet /*#439b4f*/; }
+
+  /* teemama*/
+  header h1{
+    color:chocolate;
+  }
+  /*teemmama*/
 
 h5:hover, a:hover {
   color: #e0b233; }
@@ -37,7 +43,7 @@ h5:hover, a:hover {
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
+  background-image: linear-gradient(to right, green, white, green/*#5637dd, #3046C5, #60106b*/);
   color: #d18bc8; }
 
 .row-content {
@@ -55,3 +61,26 @@ h5:hover, a:hover {
 #loginModal .modal-header {
   background-color: #901CAD;
   color: white; }
+  /*teemama css*/
+  table.center{ 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+td:hover{
+    color: springgreen;
+}
+th:hover{
+    color: rgb(192, 31, 71);
+}
+body{
+    background:grey;
+    
+}
+
+td{
+    padding: 10px;
+    margin: 40px;
+    text-align: center;
+
+}
